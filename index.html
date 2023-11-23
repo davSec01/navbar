@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script language='JavaScript'>
+        var txt=".:NavBar:.   ";
+        var speed=300;
+        var refresh=null;
+        function action() { document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresh=setTimeout("action()",speed);}action();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/w3s.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">Tutorial</a></li>
+                <li><a href="">Exercises</a></li>
+                <li><a href="">Certificates</a></li>
+                <li><a href="">Services</a></li>
+                <li><button>Search ...</button></li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <button class="signup"> Sign Up</button>
+            <button class="login"> Log In</button>
+        </div>
+    </header>
+</body>
+</html>
